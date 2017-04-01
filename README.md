@@ -11,6 +11,3 @@ Node based digital audio workstation.
 * VST 2.5 (or 3) / AU support
 * Node based routing interface
 * Scripting API (python, lua js, or ruby)
-
-
-## [TODO](https://huboard.com/eviathan/Salt/)
