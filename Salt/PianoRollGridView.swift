@@ -13,8 +13,13 @@ class PianoRollGridView: NSView {
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-
+        
+        drawBackground()
 
     }
     
+    
+    func drawBackground(){
+        
+    }
 }

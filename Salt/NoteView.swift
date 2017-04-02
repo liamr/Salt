@@ -14,6 +14,10 @@ class NoteView: NSView {
         super.draw(dirtyRect)
 
         // Drawing code here.
+        
+        // TODO
+        // Draw bordered rect
+        // Draw text on rect
     }
     
 }

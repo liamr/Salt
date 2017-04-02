@@ -10,7 +10,6 @@
 		D33792E21E9083230093249E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E11E9083230093249E /* NoteView.swift */; };
 		D33792E41E90835C0093249E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E31E90835C0093249E /* NoteViewController.swift */; };
 		D33792E61E90838D0093249E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E51E90838D0093249E /* Note.swift */; };
-		D33792E91E913A220093249E /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33792E81E913A220093249E /* Color.plist */; };
 		D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EB1E913D020093249E /* NSColorExtensions.swift */; };
 		D33792EE1E913EAD0093249E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792ED1E913EAD0093249E /* Config.swift */; };
 		D33792F01E9146840093249E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EF1E9146840093249E /* StringExtensions.swift */; };
@@ -24,6 +23,17 @@
 		D3DDBFDC1E903449002FEF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DDBFDA1E903449002FEF67 /* Main.storyboard */; };
 		D3DDBFE71E903449002FEF67 /* SaltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFE61E903449002FEF67 /* SaltTests.swift */; };
 		D3DDBFF21E903449002FEF67 /* SaltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFF11E903449002FEF67 /* SaltUITests.swift */; };
+		D3F2F9781E91688A00766B00 /* PianoRollGridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */; };
+		D3F2F97A1E9168B200766B00 /* PianoRollGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */; };
+		D3F2F98B1E9180FC00766B00 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F98A1E9180FC00766B00 /* App.swift */; };
+		D3F2F98E1E9185D700766B00 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F98D1E9185D700766B00 /* Clip.swift */; };
+		D3F2F9911E91860B00766B00 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9901E91860B00766B00 /* Track.swift */; };
+		D3F2F9941E91880700766B00 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F2F9931E91880700766B00 /* Preferences.plist */; };
+		D3F2F9971E91897800766B00 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9961E91897800766B00 /* AudioTrack.swift */; };
+		D3F2F99A1E91899900766B00 /* MIDITrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9991E91899900766B00 /* MIDITrack.swift */; };
+		D3F2F99C1E9189B700766B00 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F99B1E9189B700766B00 /* Node.swift */; };
+		D3F2F99E1E9189F300766B00 /* ReturnTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F99D1E9189F300766B00 /* ReturnTrack.swift */; };
+		D3F2F9A01E918A0A00766B00 /* AutomationTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F99F1E918A0A00766B00 /* AutomationTrack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +53,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D3F2F9841E9178B500766B00 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D33792E11E9083230093249E /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		D33792E31E90835C0093249E /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		D33792E51E90838D0093249E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		D33792E81E913A220093249E /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
 		D33792EB1E913D020093249E /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorExtensions.swift; sourceTree = "<group>"; };
 		D33792ED1E913EAD0093249E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D33792EF1E9146840093249E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -67,6 +89,17 @@
 		D3DDBFED1E903449002FEF67 /* SaltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFF11E903449002FEF67 /* SaltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltUITests.swift; sourceTree = "<group>"; };
 		D3DDBFF31E903449002FEF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridDataSource.swift; sourceTree = "<group>"; };
+		D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridController.swift; sourceTree = "<group>"; };
+		D3F2F98A1E9180FC00766B00 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		D3F2F98D1E9185D700766B00 /* Clip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
+		D3F2F9901E91860B00766B00 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		D3F2F9931E91880700766B00 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
+		D3F2F9961E91897800766B00 /* AudioTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
+		D3F2F9991E91899900766B00 /* MIDITrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDITrack.swift; sourceTree = "<group>"; };
+		D3F2F99B1E9189B700766B00 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		D3F2F99D1E9189F300766B00 /* ReturnTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnTrack.swift; sourceTree = "<group>"; };
+		D3F2F99F1E918A0A00766B00 /* AutomationTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomationTrack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +132,6 @@
 			children = (
 				D33792E11E9083230093249E /* NoteView.swift */,
 				D33792E31E90835C0093249E /* NoteViewController.swift */,
-				D33792E51E90838D0093249E /* Note.swift */,
 			);
 			name = Note;
 			sourceTree = "<group>";
@@ -118,8 +150,9 @@
 		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
 			isa = PBXGroup;
 			children = (
-				D33792E71E90843A0093249E /* Note */,
 				D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */,
+				D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */,
+				D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */,
 			);
 			name = "Piano Roll";
 			sourceTree = "<group>";
@@ -147,16 +180,19 @@
 		D3DDBFD11E903449002FEF67 /* Salt */ = {
 			isa = PBXGroup;
 			children = (
+				D3F2F9951E91895E00766B00 /* Protocols */,
+				D3F2F98F1E9185F800766B00 /* Sequencer */,
+				D3F2F98C1E9185C400766B00 /* Models */,
 				D33792EA1E913CF10093249E /* Extensions */,
-				D3DD67E31E907CAD00BFF022 /* Piano Roll */,
 				D3DDBFD21E903449002FEF67 /* AppDelegate.swift */,
 				D3DDBFD41E903449002FEF67 /* ViewController.swift */,
 				D3DDBFD61E903449002FEF67 /* Document.swift */,
 				D3DDBFD81E903449002FEF67 /* Assets.xcassets */,
 				D3DDBFDA1E903449002FEF67 /* Main.storyboard */,
 				D3DDBFDD1E903449002FEF67 /* Info.plist */,
-				D33792E81E913A220093249E /* Color.plist */,
+				D3F2F9931E91880700766B00 /* Preferences.plist */,
 				D33792ED1E913EAD0093249E /* Config.swift */,
+				D3F2F98A1E9180FC00766B00 /* App.swift */,
 			);
 			path = Salt;
 			sourceTree = "<group>";
@@ -179,6 +215,45 @@
 			path = SaltUITests;
 			sourceTree = "<group>";
 		};
+		D3F2F98C1E9185C400766B00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3F2F9981E91898A00766B00 /* Tracks */,
+				D33792E51E90838D0093249E /* Note.swift */,
+				D3F2F98D1E9185D700766B00 /* Clip.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D3F2F98F1E9185F800766B00 /* Sequencer */ = {
+			isa = PBXGroup;
+			children = (
+				D33792E71E90843A0093249E /* Note */,
+				D3DD67E31E907CAD00BFF022 /* Piano Roll */,
+			);
+			name = Sequencer;
+			sourceTree = "<group>";
+		};
+		D3F2F9951E91895E00766B00 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D3F2F9901E91860B00766B00 /* Track.swift */,
+				D3F2F99B1E9189B700766B00 /* Node.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		D3F2F9981E91898A00766B00 /* Tracks */ = {
+			isa = PBXGroup;
+			children = (
+				D3F2F9961E91897800766B00 /* AudioTrack.swift */,
+				D3F2F9991E91899900766B00 /* MIDITrack.swift */,
+				D3F2F99D1E9189F300766B00 /* ReturnTrack.swift */,
+				D3F2F99F1E918A0A00766B00 /* AutomationTrack.swift */,
+			);
+			name = Tracks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +264,7 @@
 				D3DDBFCB1E903449002FEF67 /* Sources */,
 				D3DDBFCC1E903449002FEF67 /* Frameworks */,
 				D3DDBFCD1E903449002FEF67 /* Resources */,
+				D3F2F9841E9178B500766B00 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,8 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DDBFD91E903449002FEF67 /* Assets.xcassets in Resources */,
+				D3F2F9941E91880700766B00 /* Preferences.plist in Resources */,
 				D3DDBFDC1E903449002FEF67 /* Main.storyboard in Resources */,
-				D33792E91E913A220093249E /* Color.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,17 +393,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */,
+				D3F2F9A01E918A0A00766B00 /* AutomationTrack.swift in Sources */,
 				D33792E21E9083230093249E /* NoteView.swift in Sources */,
+				D3F2F99A1E91899900766B00 /* MIDITrack.swift in Sources */,
 				D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */,
+				D3F2F98B1E9180FC00766B00 /* App.swift in Sources */,
 				D33792F01E9146840093249E /* StringExtensions.swift in Sources */,
 				D33792EE1E913EAD0093249E /* Config.swift in Sources */,
 				D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */,
+				D3F2F99E1E9189F300766B00 /* ReturnTrack.swift in Sources */,
 				D33792E61E90838D0093249E /* Note.swift in Sources */,
+				D3F2F9971E91897800766B00 /* AudioTrack.swift in Sources */,
 				D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */,
+				D3F2F99C1E9189B700766B00 /* Node.swift in Sources */,
+				D3F2F97A1E9168B200766B00 /* PianoRollGridController.swift in Sources */,
 				D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */,
 				D33792E41E90835C0093249E /* NoteViewController.swift in Sources */,
+				D3F2F9911E91860B00766B00 /* Track.swift in Sources */,
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
+				D3F2F98E1E9185D700766B00 /* Clip.swift in Sources */,
 				D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */,
+				D3F2F9781E91688A00766B00 /* PianoRollGridDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +558,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.Salt;
@@ -486,6 +573,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.Salt;
