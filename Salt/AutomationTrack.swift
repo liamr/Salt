@@ -10,4 +10,7 @@ import Foundation
 
 class AutomationTrack: Track {
     
+    // Node Properties
+    var position: Vector2 = Vector2()
+    
 }

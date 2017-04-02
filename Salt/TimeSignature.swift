@@ -1,5 +1,5 @@
 //
-//  ReturnTrack.swift
+//  TimeSignature.swift
 //  Salt
 //
 //  Created by Brian on 02/04/2017.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-class ReturnTrack: Track {
-    
-    // Node Properties
-    var position: Vector2 = Vector2()
-    
+class TimeSignature {
+    var numerator: Int = 4
+    var denominator: Int = 4
 }

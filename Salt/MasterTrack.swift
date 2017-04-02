@@ -1,5 +1,5 @@
 //
-//  ReturnTrack.swift
+//  MasterTrack.swift
 //  Salt
 //
 //  Created by Brian on 02/04/2017.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ReturnTrack: Track {
+class MasterTrack: Track {
     
     // Node Properties
     var position: Vector2 = Vector2()

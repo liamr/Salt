@@ -1,5 +1,5 @@
 //
-//  ReturnTrack.swift
+//  Vector2D.swift
 //  Salt
 //
 //  Created by Brian on 02/04/2017.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-class ReturnTrack: Track {
-    
-    // Node Properties
-    var position: Vector2 = Vector2()
-    
+struct Vector2 {
+    var x: Double = 0.0
+    var y: Double = 0.0
 }

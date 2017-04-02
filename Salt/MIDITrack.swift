@@ -9,5 +9,9 @@
 import Foundation
 
 class MIDITrack: Track, ClipTrack {
-    var clips: [Clip] = [MIDIClip]()
+    
+    // Node Properties
+    var position: Vector2 = Vector2()
+    
+    var clips: [ClipSlot] = [ClipSlot]()
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ClipTrack {
-    var clips: [Clip] { get set }
+    var clips: [ClipSlot] { get set }
 }

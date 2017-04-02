@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Node {
-    
+    var position: Vector2 { get set }
 }
