@@ -16,7 +16,7 @@ class App {
     var selectedClip: Clip? = nil
     var selectedTrack: Track? = nil
     
-    var tracks: [Track]? = nil
+    var song: Song? = nil
     
     init() {
         // TODO: New file init

@@ -13,6 +13,10 @@
 		D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EB1E913D020093249E /* NSColorExtensions.swift */; };
 		D33792EE1E913EAD0093249E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792ED1E913EAD0093249E /* Config.swift */; };
 		D33792F01E9146840093249E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EF1E9146840093249E /* StringExtensions.swift */; };
+		D3A8969C1E918C6900CAA9D7 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8969B1E918C6900CAA9D7 /* Song.swift */; };
+		D3A8969E1E918E8E00CAA9D7 /* MIDIClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */; };
+		D3A896A11E918E9D00CAA9D7 /* AudioClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */; };
+		D3A896A31E918F4D00CAA9D7 /* ClipTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A21E918F4D00CAA9D7 /* ClipTrack.swift */; };
 		D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */; };
 		D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */; };
 		D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */; };
@@ -73,6 +77,10 @@
 		D33792EB1E913D020093249E /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorExtensions.swift; sourceTree = "<group>"; };
 		D33792ED1E913EAD0093249E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D33792EF1E9146840093249E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		D3A8969B1E918C6900CAA9D7 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIClip.swift; sourceTree = "<group>"; };
+		D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioClip.swift; sourceTree = "<group>"; };
+		D3A896A21E918F4D00CAA9D7 /* ClipTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipTrack.swift; sourceTree = "<group>"; };
 		D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridView.swift; sourceTree = "<group>"; };
@@ -147,6 +155,15 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		D3A8969F1E918E9100CAA9D7 /* Clips */ = {
+			isa = PBXGroup;
+			children = (
+				D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */,
+				D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */,
+			);
+			name = Clips;
+			sourceTree = "<group>";
+		};
 		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,9 +235,10 @@
 		D3F2F98C1E9185C400766B00 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D3A8969F1E918E9100CAA9D7 /* Clips */,
 				D3F2F9981E91898A00766B00 /* Tracks */,
 				D33792E51E90838D0093249E /* Note.swift */,
-				D3F2F98D1E9185D700766B00 /* Clip.swift */,
+				D3A8969B1E918C6900CAA9D7 /* Song.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -237,8 +255,10 @@
 		D3F2F9951E91895E00766B00 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				D3F2F98D1E9185D700766B00 /* Clip.swift */,
 				D3F2F9901E91860B00766B00 /* Track.swift */,
 				D3F2F99B1E9189B700766B00 /* Node.swift */,
+				D3A896A21E918F4D00CAA9D7 /* ClipTrack.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -396,15 +416,19 @@
 				D3F2F9A01E918A0A00766B00 /* AutomationTrack.swift in Sources */,
 				D33792E21E9083230093249E /* NoteView.swift in Sources */,
 				D3F2F99A1E91899900766B00 /* MIDITrack.swift in Sources */,
+				D3A8969E1E918E8E00CAA9D7 /* MIDIClip.swift in Sources */,
 				D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */,
 				D3F2F98B1E9180FC00766B00 /* App.swift in Sources */,
 				D33792F01E9146840093249E /* StringExtensions.swift in Sources */,
 				D33792EE1E913EAD0093249E /* Config.swift in Sources */,
 				D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */,
 				D3F2F99E1E9189F300766B00 /* ReturnTrack.swift in Sources */,
+				D3A896A31E918F4D00CAA9D7 /* ClipTrack.swift in Sources */,
+				D3A8969C1E918C6900CAA9D7 /* Song.swift in Sources */,
 				D33792E61E90838D0093249E /* Note.swift in Sources */,
 				D3F2F9971E91897800766B00 /* AudioTrack.swift in Sources */,
 				D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */,
+				D3A896A11E918E9D00CAA9D7 /* AudioClip.swift in Sources */,
 				D3F2F99C1E9189B700766B00 /* Node.swift in Sources */,
 				D3F2F97A1E9168B200766B00 /* PianoRollGridController.swift in Sources */,
 				D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  MIDITrack.swift
+//  AudioClip.swift
 //  Salt
 //
 //  Created by Brian on 02/04/2017.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class MIDITrack: Track, ClipTrack {
-    var clips: [Clip] = [MIDIClip]()
+class AudioClip: Clip {
+    
 }

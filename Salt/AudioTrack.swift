@@ -8,6 +8,6 @@
 
 import Foundation
 
-class AudioTrack: Track {
-    
+class AudioTrack: Track, ClipTrack {
+    var clips: [Clip] = [AudioClip]()
 }
