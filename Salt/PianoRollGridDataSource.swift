@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol PianoRollGridDataSource {
-    
+protocol PianoRollGridDataSource: class {
+    func getNotes() -> [Note]
 }

@@ -11,6 +11,9 @@ import Cocoa
 
 class PianoRollGridController: NSViewController, PianoRollGridDataSource {
     
+    
+
+    
     var model = Note()
     
     override func viewDidLoad() {
@@ -24,5 +27,8 @@ class PianoRollGridController: NSViewController, PianoRollGridDataSource {
         }
     }
     
+    func getNotes() -> [Note] {
+        return [Note]()
+    }
     
 }

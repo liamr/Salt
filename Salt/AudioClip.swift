@@ -19,6 +19,7 @@ class AudioClip: Clip {
     
     // Playhead
     var playhead: Double = 0.0
+    var timeSignature: TimeSignature = TimeSignature()
     
     // Loop
     var looping: Bool = false

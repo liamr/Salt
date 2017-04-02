@@ -9,6 +9,8 @@
 import Cocoa
 
 class NoteView: NSView {
+    
+    var height: Double = 1.0
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)

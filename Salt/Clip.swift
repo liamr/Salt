@@ -17,6 +17,7 @@ protocol Clip {
     
     // Playhead
     var playhead: Double { get set }
+    var timeSignature: TimeSignature { get set }
     
     // Loop
     var looping: Bool { get set }
