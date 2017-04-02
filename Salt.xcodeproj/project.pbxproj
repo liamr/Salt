@@ -21,6 +21,7 @@
 		D3A896A71E91983E00CAA9D7 /* MasterTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A61E91983E00CAA9D7 /* MasterTrack.swift */; };
 		D3A896A91E919AFB00CAA9D7 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A81E919AFB00CAA9D7 /* TimeSignature.swift */; };
 		D3A896AB1E919C9D00CAA9D7 /* ClipSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */; };
+		D3A896AE1E91A0AE00CAA9D7 /* ClipState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */; };
 		D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */; };
 		D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */; };
 		D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */; };
@@ -89,6 +90,7 @@
 		D3A896A61E91983E00CAA9D7 /* MasterTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTrack.swift; sourceTree = "<group>"; };
 		D3A896A81E919AFB00CAA9D7 /* TimeSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
 		D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipSlot.swift; sourceTree = "<group>"; };
+		D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipState.swift; sourceTree = "<group>"; };
 		D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,14 @@
 			name = Clips;
 			sourceTree = "<group>";
 		};
+		D3A896AC1E91A09D00CAA9D7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
 		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		D3DDBFD11E903449002FEF67 /* Salt */ = {
 			isa = PBXGroup;
 			children = (
+				D3A896AC1E91A09D00CAA9D7 /* Enums */,
 				D3F2F9951E91895E00766B00 /* Protocols */,
 				D3F2F98F1E9185F800766B00 /* Sequencer */,
 				D3F2F98C1E9185C400766B00 /* Models */,
@@ -269,7 +280,6 @@
 				D3F2F98D1E9185D700766B00 /* Clip.swift */,
 				D3F2F9901E91860B00766B00 /* Track.swift */,
 				D3F2F99B1E9189B700766B00 /* Node.swift */,
-				D3A896A21E918F4D00CAA9D7 /* ClipTrack.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -277,6 +287,7 @@
 		D3F2F9981E91898A00766B00 /* Tracks */ = {
 			isa = PBXGroup;
 			children = (
+				D3A896A21E918F4D00CAA9D7 /* ClipTrack.swift */,
 				D3F2F9961E91897800766B00 /* AudioTrack.swift */,
 				D3F2F9991E91899900766B00 /* MIDITrack.swift */,
 				D3F2F99D1E9189F300766B00 /* ReturnTrack.swift */,
@@ -429,6 +440,7 @@
 				D3F2F9A01E918A0A00766B00 /* AutomationTrack.swift in Sources */,
 				D33792E21E9083230093249E /* NoteView.swift in Sources */,
 				D3F2F99A1E91899900766B00 /* MIDITrack.swift in Sources */,
+				D3A896AE1E91A0AE00CAA9D7 /* ClipState.swift in Sources */,
 				D3A8969E1E918E8E00CAA9D7 /* MIDIClip.swift in Sources */,
 				D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */,
 				D3F2F98B1E9180FC00766B00 /* App.swift in Sources */,

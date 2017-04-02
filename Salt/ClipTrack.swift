@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol ClipTrack {
-    var clips: [ClipSlot] { get set }
+class ClipTrack: Track {
+    var position: Vector2 = Vector2()
+
+    var clips: [ClipSlot] = [ClipSlot]()
 }

@@ -8,10 +8,5 @@
 
 import Foundation
 
-class AudioTrack: Track, ClipTrack {
-    
-    // Node Properties
-    var position: Vector2 = Vector2()
-    
-    var clips: [ClipSlot] = [ClipSlot]()
+class AudioTrack: ClipTrack {
 }
