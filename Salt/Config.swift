@@ -16,7 +16,8 @@ class Config {
     static let instance: Config = Config()
     
     // Config
-    let colors: Colors = Colors();
+    let colors = Colors()
+    let preferences = Preferences()
 }
 
 class Colors {

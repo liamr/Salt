@@ -18,6 +18,8 @@ class App {
     
     var song: Song? = nil
     
+    var theme = Theme.set()
+    
     init() {
         // TODO: New file init
     }

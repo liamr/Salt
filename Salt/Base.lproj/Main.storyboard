@@ -682,9 +682,20 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="5gI-5U-AMq" customClass="ViewController" customModule="Salt" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="ERx-hH-rdd" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
+                    <view key="view" wantsLayer="YES" id="ERx-hH-rdd">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZWb-8x-kGz" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZWb-8x-kGz" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="QKf-nl-GVL"/>
+                            <constraint firstItem="ZWb-8x-kGz" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="WHN-WE-6XM"/>
+                            <constraint firstAttribute="bottom" secondItem="ZWb-8x-kGz" secondAttribute="bottom" id="pNk-2Q-WhB"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWb-8x-kGz" secondAttribute="trailing" id="rQe-Qv-E6d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
