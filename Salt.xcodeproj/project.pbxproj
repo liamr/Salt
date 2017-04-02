@@ -10,6 +10,12 @@
 		D33792E21E9083230093249E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E11E9083230093249E /* NoteView.swift */; };
 		D33792E41E90835C0093249E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E31E90835C0093249E /* NoteViewController.swift */; };
 		D33792E61E90838D0093249E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E51E90838D0093249E /* Note.swift */; };
+		D33792E91E913A220093249E /* Color.plist in Resources */ = {isa = PBXBuildFile; fileRef = D33792E81E913A220093249E /* Color.plist */; };
+		D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EB1E913D020093249E /* NSColorExtensions.swift */; };
+		D33792EE1E913EAD0093249E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792ED1E913EAD0093249E /* Config.swift */; };
+		D33792F01E9146840093249E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EF1E9146840093249E /* StringExtensions.swift */; };
+		D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */; };
+		D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */; };
 		D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */; };
 		D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD21E903449002FEF67 /* AppDelegate.swift */; };
 		D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD41E903449002FEF67 /* ViewController.swift */; };
@@ -41,6 +47,12 @@
 		D33792E11E9083230093249E /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		D33792E31E90835C0093249E /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		D33792E51E90838D0093249E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D33792E81E913A220093249E /* Color.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Color.plist; sourceTree = "<group>"; };
+		D33792EB1E913D020093249E /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorExtensions.swift; sourceTree = "<group>"; };
+		D33792ED1E913EAD0093249E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D33792EF1E9146840093249E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridView.swift; sourceTree = "<group>"; };
 		D3DDBFCF1E903449002FEF67 /* Salt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFD21E903449002FEF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,13 +94,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
+		D33792E71E90843A0093249E /* Note */ = {
 			isa = PBXGroup;
 			children = (
-				D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */,
 				D33792E11E9083230093249E /* NoteView.swift */,
 				D33792E31E90835C0093249E /* NoteViewController.swift */,
 				D33792E51E90838D0093249E /* Note.swift */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		D33792EA1E913CF10093249E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D33792EB1E913D020093249E /* NSColorExtensions.swift */,
+				D33792EF1E9146840093249E /* StringExtensions.swift */,
+				D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */,
+				D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
+			isa = PBXGroup;
+			children = (
+				D33792E71E90843A0093249E /* Note */,
+				D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */,
 			);
 			name = "Piano Roll";
 			sourceTree = "<group>";
@@ -116,6 +147,7 @@
 		D3DDBFD11E903449002FEF67 /* Salt */ = {
 			isa = PBXGroup;
 			children = (
+				D33792EA1E913CF10093249E /* Extensions */,
 				D3DD67E31E907CAD00BFF022 /* Piano Roll */,
 				D3DDBFD21E903449002FEF67 /* AppDelegate.swift */,
 				D3DDBFD41E903449002FEF67 /* ViewController.swift */,
@@ -123,6 +155,8 @@
 				D3DDBFD81E903449002FEF67 /* Assets.xcassets */,
 				D3DDBFDA1E903449002FEF67 /* Main.storyboard */,
 				D3DDBFDD1E903449002FEF67 /* Info.plist */,
+				D33792E81E913A220093249E /* Color.plist */,
+				D33792ED1E913EAD0093249E /* Config.swift */,
 			);
 			path = Salt;
 			sourceTree = "<group>";
@@ -257,6 +291,7 @@
 			files = (
 				D3DDBFD91E903449002FEF67 /* Assets.xcassets in Resources */,
 				D3DDBFDC1E903449002FEF67 /* Main.storyboard in Resources */,
+				D33792E91E913A220093249E /* Color.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +318,16 @@
 			files = (
 				D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */,
 				D33792E21E9083230093249E /* NoteView.swift in Sources */,
+				D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */,
+				D33792F01E9146840093249E /* StringExtensions.swift in Sources */,
+				D33792EE1E913EAD0093249E /* Config.swift in Sources */,
+				D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */,
 				D33792E61E90838D0093249E /* Note.swift in Sources */,
 				D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */,
 				D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */,
 				D33792E41E90835C0093249E /* NoteViewController.swift in Sources */,
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
+				D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
