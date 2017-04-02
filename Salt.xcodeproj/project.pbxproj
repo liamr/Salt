@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */; };
 		D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD21E903449002FEF67 /* AppDelegate.swift */; };
 		D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD41E903449002FEF67 /* ViewController.swift */; };
 		D3DDBFD71E903449002FEF67 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD61E903449002FEF67 /* Document.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridView.swift; sourceTree = "<group>"; };
 		D3DDBFCF1E903449002FEF67 /* Salt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFD21E903449002FEF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3DDBFD41E903449002FEF67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */,
+			);
+			name = "Piano Roll";
+			sourceTree = "<group>";
+		};
 		D3DDBFC61E903449002FEF67 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		D3DDBFD11E903449002FEF67 /* Salt */ = {
 			isa = PBXGroup;
 			children = (
+				D3DD67E31E907CAD00BFF022 /* Piano Roll */,
 				D3DDBFD21E903449002FEF67 /* AppDelegate.swift */,
 				D3DDBFD41E903449002FEF67 /* ViewController.swift */,
 				D3DDBFD61E903449002FEF67 /* Document.swift */,
@@ -263,6 +274,7 @@
 			files = (
 				D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */,
 				D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */,
+				D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */,
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +523,7 @@
 				D3DDBFF81E903449002FEF67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3DDBFF91E903449002FEF67 /* Build configuration list for PBXNativeTarget "SaltTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +532,7 @@
 				D3DDBFFB1E903449002FEF67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3DDBFFC1E903449002FEF67 /* Build configuration list for PBXNativeTarget "SaltUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +541,7 @@
 				D3DDBFFE1E903449002FEF67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
