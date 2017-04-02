@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33792E21E9083230093249E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E11E9083230093249E /* NoteView.swift */; };
+		D33792E41E90835C0093249E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E31E90835C0093249E /* NoteViewController.swift */; };
+		D33792E61E90838D0093249E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E51E90838D0093249E /* Note.swift */; };
 		D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */; };
 		D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD21E903449002FEF67 /* AppDelegate.swift */; };
 		D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD41E903449002FEF67 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D33792E11E9083230093249E /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		D33792E31E90835C0093249E /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		D33792E51E90838D0093249E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridView.swift; sourceTree = "<group>"; };
 		D3DDBFCF1E903449002FEF67 /* Salt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFD21E903449002FEF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */,
+				D33792E11E9083230093249E /* NoteView.swift */,
+				D33792E31E90835C0093249E /* NoteViewController.swift */,
+				D33792E51E90838D0093249E /* Note.swift */,
 			);
 			name = "Piano Roll";
 			sourceTree = "<group>";
@@ -273,8 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */,
+				D33792E21E9083230093249E /* NoteView.swift in Sources */,
+				D33792E61E90838D0093249E /* Note.swift in Sources */,
 				D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */,
 				D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */,
+				D33792E41E90835C0093249E /* NoteViewController.swift in Sources */,
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
