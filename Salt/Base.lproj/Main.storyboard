@@ -4,6 +4,7 @@
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -667,8 +668,9 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="479" y="287" width="500" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="500" height="400"/>
                     </window>
                     <connections>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
@@ -683,42 +685,94 @@
             <objects>
                 <viewController id="5gI-5U-AMq" customClass="ViewController" customModule="Salt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="ERx-hH-rdd">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="706" height="344"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-Ps-dqf">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <clipView key="contentView" wantsLayer="YES" id="1Q5-dK-DgE">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <view autoresizesSubviews="NO" wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ly4-1C-Sv1" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="2" width="598" height="608"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        </view>
-                                    </subviews>
-                                </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="XBh-CP-Ocy">
-                                    <rect key="frame" x="0.0" y="254" width="480" height="16"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cuW-G2-Liu">
-                                    <rect key="frame" x="464" y="0.0" width="16" height="270"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
+                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0FF-Kc-1VT">
+                                <rect key="frame" x="0.0" y="0.0" width="706" height="344"/>
+                                <subviews>
+                                    <stackView distribution="fillProportionally" orientation="vertical" alignment="centerX" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXY-XA-Pl5">
+                                        <rect key="frame" x="0.0" y="249" width="218" height="95"/>
+                                        <subviews>
+                                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qbe-ud-U7h">
+                                                <rect key="frame" x="-2" y="78" width="222" height="19"/>
+                                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="400" maxValue="4000" doubleValue="600" tickMarkPosition="above" sliderType="linear" id="8IM-Bi-rzi"/>
+                                                <connections>
+                                                    <action selector="setHeightWithSender:" target="Ly4-1C-Sv1" id="HcJ-rC-DN9"/>
+                                                </connections>
+                                            </slider>
+                                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-aC-n49">
+                                                <rect key="frame" x="-2" y="38" width="222" height="19"/>
+                                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="PdX-2W-gOo"/>
+                                                <connections>
+                                                    <action selector="updateHeightWithSender:" target="Ly4-1C-Sv1" id="xU7-o5-2xJ"/>
+                                                </connections>
+                                            </slider>
+                                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QEX-tr-O2z">
+                                                <rect key="frame" x="-2" y="-2" width="222" height="19"/>
+                                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.42642257462686567" tickMarkPosition="above" sliderType="linear" id="jjc-NP-AAk"/>
+                                                <connections>
+                                                    <action selector="scaleHeightWithSender:" target="Ly4-1C-Sv1" id="Vok-7C-NC9"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-Ps-dqf">
+                                        <rect key="frame" x="226" y="0.0" width="480" height="344"/>
+                                        <clipView key="contentView" wantsLayer="YES" id="1Q5-dK-DgE">
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="344"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view autoresizesSubviews="NO" wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ly4-1C-Sv1" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="76" width="598" height="608"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </view>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="XBh-CP-Ocy">
+                                            <rect key="frame" x="0.0" y="328" width="480" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cuW-G2-Liu">
+                                            <rect key="frame" x="464" y="0.0" width="16" height="344"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8z2-Ps-dqf" firstAttribute="leading" secondItem="0FF-Kc-1VT" secondAttribute="leading" constant="226" id="aZp-W2-uDK"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="8z2-Ps-dqf" secondAttribute="trailing" id="2Ka-Bu-Ug6"/>
-                            <constraint firstItem="8z2-Ps-dqf" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="Y6K-x2-rL2"/>
-                            <constraint firstItem="8z2-Ps-dqf" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="hIL-2j-U2k"/>
-                            <constraint firstAttribute="bottom" secondItem="8z2-Ps-dqf" secondAttribute="bottom" id="mce-Uu-zUr"/>
+                            <constraint firstAttribute="trailing" secondItem="0FF-Kc-1VT" secondAttribute="trailing" id="Gjy-zE-ubf"/>
+                            <constraint firstAttribute="bottom" secondItem="0FF-Kc-1VT" secondAttribute="bottom" id="IvM-J2-l42"/>
+                            <constraint firstItem="0FF-Kc-1VT" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="W7h-Fb-9NW"/>
+                            <constraint firstItem="0FF-Kc-1VT" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="YtF-bH-K3W"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="188" y="692"/>
         </scene>
     </scenes>
 </document>

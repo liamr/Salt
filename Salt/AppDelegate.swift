@@ -13,9 +13,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
-        // Init new empty app
+        // First things first ... Load up an empty application
         App.current = App()
     }
+    
+    
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application

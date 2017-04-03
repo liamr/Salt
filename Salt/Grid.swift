@@ -14,9 +14,6 @@ class Grid {
     var isFixed: Bool = true
     
     var zoom: Double = 1.0
-    
-    public private(set) var numerator: Int = 1
-    var denominator: Int = 16
 }
 
 //<FixedNumerator Value="1" />

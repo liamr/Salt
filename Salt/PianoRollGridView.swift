@@ -15,9 +15,8 @@ class PianoRollGridView: NSView {
     
     //private var noteCache: Dictionary<UUID, PianoRollNoteView> = [:]
     
-    var backgroundColour: NSColor = NSColor(deviceRed:0.16, green:0.17, blue:0.21, alpha:1.00) {
-        didSet { setNeedsDisplay(bounds)}
-    }
+    let widthMultiplier: Double = 60.0
+    let heightMultiplier: Double = 60.0
     
     var keyWidth: Double = 50.0 {
         didSet { setNeedsDisplay(bounds) }
@@ -27,12 +26,27 @@ class PianoRollGridView: NSView {
         didSet { setNeedsDisplay(bounds) }
     }
     
+
     @IBAction func updateWidth(sender: NSSlider) {
-        keyWidth = sender.doubleValue
+        keyWidth = sender.doubleValue * widthMultiplier
     }
     
+    // TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
+    @IBAction func scaleHeight(sender: NSSlider) {
+        keyHeight = sender.doubleValue * heightMultiplier
+        self.frame = NSRect(x: 0, y: 0, width: self.frame.width, height: CGFloat(sender.doubleValue * 4000))
+        setNeedsDisplay(bounds)
+    }
+    
+    // TODO: RENAME THESE - This one resizes the view
+    @IBAction func setHeight(sender: NSSlider) {
+        self.frame = NSRect(x: 0, y: 0, width: self.frame.width, height: CGFloat(sender.doubleValue))
+        setNeedsDisplay(bounds)
+    }
+    
+    // TODO: RENAME THESE - This one resizes the grid res
     @IBAction func updateHeight(sender: NSSlider) {
-        keyHeight = sender.doubleValue
+        keyHeight = sender.doubleValue * heightMultiplier
     }
     
     required init?(coder: NSCoder) {
@@ -41,20 +55,23 @@ class PianoRollGridView: NSView {
         self.needsDisplay = true
     }
 
+    // Drawing
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
+        //withinHeightRange = (keyHeight * 128) >= Double(dirtyRect.height)
+        
         // Init
-        layer?.backgroundColor = backgroundColour.cgColor
+        layer?.backgroundColor = App.current?.theme.pianoRoll.background.cgColor
         
         drawgrid(dirtyRect)
         drawNotes(dirtyRect)
 
     }
     
-    
-    
     func drawgrid(_ rect: NSRect) {
+        
+        //let widthRatio = getRatio(<#T##gridRes: Double##Double#>, <#T##width: CGFloat##CGFloat#>)
         
         // Set Colours
         NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.2).setFill()
@@ -75,6 +92,7 @@ class PianoRollGridView: NSView {
         let width: Int = Int(frame.width)
         let gridWidth: Double = Double((superview?.bounds.width)!) / App.current!.selectedClip!.timeSignature.denominator
         
+        //Swift.print(gridWidth)
         
         for i in 0...width {
             if Double(i).truncatingRemainder(dividingBy: round(gridWidth)) == 0 {
@@ -94,6 +112,7 @@ class PianoRollGridView: NSView {
             let yPos: Int = (i + 1) * Int(keyHeight)
             
             if isBlackKey(key: keyCounter) {
+                
                 // Draw Note
                 drawKey(rect, key: i, isBlackKey: true)
                 
@@ -102,7 +121,9 @@ class PianoRollGridView: NSView {
                 
                 noteTrackRect.stroke()
                 noteTrackRect.fill()
+                
             } else {
+                
                 // Draw Note
                 drawKey(rect, key: i, isBlackKey: true)
                 
@@ -114,10 +135,6 @@ class PianoRollGridView: NSView {
             
             keyCounter = keyCounter >= 11 ? 0 : keyCounter + 1
         }
-    }
-    
-    func isBlackKey (key: Int) -> Bool {
-        return key == 1 || key == 3 || key == 6 || key == 8 || key == 10
     }
     
     func drawNotes (_ rect: NSRect) {
@@ -152,5 +169,14 @@ class PianoRollGridView: NSView {
         //
         //        keyRect.stroke()
         //        keyRect.fill()
+    }
+    
+    // Utility
+    func isBlackKey (key: Int) -> Bool {
+        return key == 1 || key == 3 || key == 6 || key == 8 || key == 10
+    }
+    
+    func getRatio(_ gridRes: Double, _ width: CGFloat) -> Double {
+        return gridRes / Double(width)
     }
 }

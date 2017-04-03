@@ -10,13 +10,21 @@ import Foundation
 import Cocoa
 
 class Note {
+    var id: UUID = UUID()
+    var isEnabled: Bool = true
+    
     var value: Int = 0;
     var velocity: Double = 1.0;
-    var start: Double = 0.0;
-    var length: Double = 1.0;
+    
+    var time: Double = 0.0;
+    var duration: Double = 1.0;
+    
+    var noteOnVelocity: Int = 128
+    var noteOffVelocity: Int = 64
+    
     var color: NSColor { get { return getColorFromVelocity() } }
     
     private func getColorFromVelocity() -> NSColor {
-        return Config.instance.colors.noteMinVelocity.lerp(Config.instance.colors.noteMaxVelocity, velocity)
+        return (App.current?.theme.pianoRoll.noteMinVelocity.lerp((App.current?.theme.pianoRoll.noteMaxVelocity)!, velocity))!
     }
 }
