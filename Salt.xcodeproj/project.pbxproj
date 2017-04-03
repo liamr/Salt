@@ -24,6 +24,7 @@
 		D3A896A91E919AFB00CAA9D7 /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A81E919AFB00CAA9D7 /* TimeSignature.swift */; };
 		D3A896AB1E919C9D00CAA9D7 /* ClipSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */; };
 		D3A896AE1E91A0AE00CAA9D7 /* ClipState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */; };
+		D3B4B7781E92288000D01B30 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B4B7771E92288000D01B30 /* Grid.swift */; };
 		D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */; };
 		D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */; };
 		D3D1ED9D1E91AF4300DF7C93 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */; };
@@ -96,6 +97,7 @@
 		D3A896A81E919AFB00CAA9D7 /* TimeSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
 		D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipSlot.swift; sourceTree = "<group>"; };
 		D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipState.swift; sourceTree = "<group>"; };
+		D3B4B7771E92288000D01B30 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				D3A896A41E91969D00CAA9D7 /* Vector2.swift */,
 				D3A896A81E919AFB00CAA9D7 /* TimeSignature.swift */,
 				D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */,
+				D3B4B7771E92288000D01B30 /* Grid.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
 				D3F2F98E1E9185D700766B00 /* Clip.swift in Sources */,
 				D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */,
+				D3B4B7781E92288000D01B30 /* Grid.swift in Sources */,
 				D3F2F9781E91688A00766B00 /* PianoRollGridDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

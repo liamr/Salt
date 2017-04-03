@@ -24,4 +24,6 @@ protocol Clip {
     var loopStart: Double { get set }
     var loopEnd: Double { get set }
     
+    // Grid
+    var grid: Grid { get set }
 }

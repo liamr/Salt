@@ -26,6 +26,9 @@ class AudioClip: Clip {
     var loopStart: Double = 0.0
     var loopEnd: Double
     
+    // Grid
+    var grid: Grid = Grid()
+    
     init() {
         loopEnd = length
     }

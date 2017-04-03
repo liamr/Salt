@@ -9,6 +9,6 @@
 import Foundation
 
 class TimeSignature {
-    var numerator: Int = 4
-    var denominator: Int = 4
+    var numerator: Double = 4
+    var denominator: Double = 4
 }

@@ -39,7 +39,6 @@ class PianoRollGridView: NSView {
         super.init(coder:coder)
         self.wantsLayer = true
         self.needsDisplay = true
-        
     }
 
     override func draw(_ dirtyRect: NSRect) {
@@ -53,6 +52,8 @@ class PianoRollGridView: NSView {
 
     }
     
+    
+    
     func drawgrid(_ rect: NSRect) {
         
         // Set Colours
@@ -61,25 +62,25 @@ class PianoRollGridView: NSView {
         
         drawHorizontals(rect)
         
-//        if App.instance.currentClip.grid.isFixed {
-//            drawVerticalGridLines(rect)
-//        }
-//        else {
-//            // TODO Implement Dynamic Grid
-//        }
+        if let _ = App.current?.selectedClip?.grid.isFixed {
+            drawVerticalGridLines(rect)
+        }
+        else {
+            // TODO Implement Dynamic Grid
+        }
         
     }
     
     func drawVerticalGridLines(_ rect: NSRect) {
-//        let width: Int = Int(frame.width)
-//        let gridWidth: Double = Double((superview?.bounds.width)!) / App.current!.selectedClip!.timeSignature.denominator
-//        
-//        
-//        for i in 0...width {
-//            if Double(i).truncatingRemainder(dividingBy: round(gridWidth)) == 0 {
-//                NSBezierPath.strokeLine(from: NSMakePoint(CGFloat(i), 0), to: NSMakePoint(CGFloat(i), frame.height))
-//            }
-//        }
+        let width: Int = Int(frame.width)
+        let gridWidth: Double = Double((superview?.bounds.width)!) / App.current!.selectedClip!.timeSignature.denominator
+        
+        
+        for i in 0...width {
+            if Double(i).truncatingRemainder(dividingBy: round(gridWidth)) == 0 {
+                NSBezierPath.strokeLine(from: NSMakePoint(CGFloat(i), 0), to: NSMakePoint(CGFloat(i), frame.height))
+            }
+        }
         
     }
     

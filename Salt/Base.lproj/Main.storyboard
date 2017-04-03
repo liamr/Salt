@@ -686,15 +686,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZWb-8x-kGz" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
+                            <scrollView wantsLayer="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" scrollerKnobStyle="dark" translatesAutoresizingMaskIntoConstraints="NO" id="8z2-Ps-dqf">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                            </customView>
+                                <clipView key="contentView" wantsLayer="YES" id="1Q5-dK-DgE">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view autoresizesSubviews="NO" wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ly4-1C-Sv1" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="2" width="598" height="608"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="XBh-CP-Ocy">
+                                    <rect key="frame" x="0.0" y="254" width="480" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cuW-G2-Liu">
+                                    <rect key="frame" x="464" y="0.0" width="16" height="270"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ZWb-8x-kGz" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="QKf-nl-GVL"/>
-                            <constraint firstItem="ZWb-8x-kGz" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="WHN-WE-6XM"/>
-                            <constraint firstAttribute="bottom" secondItem="ZWb-8x-kGz" secondAttribute="bottom" id="pNk-2Q-WhB"/>
-                            <constraint firstAttribute="trailing" secondItem="ZWb-8x-kGz" secondAttribute="trailing" id="rQe-Qv-E6d"/>
+                            <constraint firstAttribute="trailing" secondItem="8z2-Ps-dqf" secondAttribute="trailing" id="2Ka-Bu-Ug6"/>
+                            <constraint firstItem="8z2-Ps-dqf" firstAttribute="leading" secondItem="ERx-hH-rdd" secondAttribute="leading" id="Y6K-x2-rL2"/>
+                            <constraint firstItem="8z2-Ps-dqf" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="hIL-2j-U2k"/>
+                            <constraint firstAttribute="bottom" secondItem="8z2-Ps-dqf" secondAttribute="bottom" id="mce-Uu-zUr"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -22,6 +22,8 @@ class App {
     
     init() {
         // TODO: New file init
+        
+        selectedClip = MIDIClip()
     }
     
     init(_ filePath: String) {
