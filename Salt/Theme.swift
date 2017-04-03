@@ -27,7 +27,7 @@ class Theme {
     static func set(_ name: String = DEFAULT_THEME) -> Theme {
         let t = load(name)
         App.current?.theme = t
-        UserDefaults.standard.set(t, forKey: "theme")
+        //UserDefaults.standard.set(t, forKey: "theme")
         
         return t
     }

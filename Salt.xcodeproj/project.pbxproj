@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D310A5131E91BA3F00DB367B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310A5121E91BA3F00DB367B /* Preferences.swift */; };
+		D310A5151E91BDBE00DB367B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310A5141E91BDBE00DB367B /* Constants.swift */; };
 		D33792E21E9083230093249E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E11E9083230093249E /* NoteView.swift */; };
 		D33792E41E90835C0093249E /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E31E90835C0093249E /* NoteViewController.swift */; };
 		D33792E61E90838D0093249E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E51E90838D0093249E /* Note.swift */; };
@@ -24,6 +26,7 @@
 		D3A896AE1E91A0AE00CAA9D7 /* ClipState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */; };
 		D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */; };
 		D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */; };
+		D3D1ED9D1E91AF4300DF7C93 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */; };
 		D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */; };
 		D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD21E903449002FEF67 /* AppDelegate.swift */; };
 		D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFD41E903449002FEF67 /* ViewController.swift */; };
@@ -76,6 +79,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D310A5121E91BA3F00DB367B /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		D310A5141E91BDBE00DB367B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D33792E11E9083230093249E /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		D33792E31E90835C0093249E /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		D33792E51E90838D0093249E /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -93,6 +98,7 @@
 		D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipState.swift; sourceTree = "<group>"; };
 		D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridView.swift; sourceTree = "<group>"; };
 		D3DDBFCF1E903449002FEF67 /* Salt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFD21E903449002FEF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -229,7 +235,9 @@
 				D3DDBFDD1E903449002FEF67 /* Info.plist */,
 				D3F2F9931E91880700766B00 /* Preferences.plist */,
 				D33792ED1E913EAD0093249E /* Config.swift */,
+				D310A5121E91BA3F00DB367B /* Preferences.swift */,
 				D3F2F98A1E9180FC00766B00 /* App.swift */,
+				D310A5141E91BDBE00DB367B /* Constants.swift */,
 			);
 			path = Salt;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 				D3A8969B1E918C6900CAA9D7 /* Song.swift */,
 				D3A896A41E91969D00CAA9D7 /* Vector2.swift */,
 				D3A896A81E919AFB00CAA9D7 /* TimeSignature.swift */,
+				D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -304,6 +313,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3DDBFF61E903449002FEF67 /* Build configuration list for PBXNativeTarget "Salt" */;
 			buildPhases = (
+				D310A5161E91BF8300DB367B /* Build Increment */,
+				D310A5171E91C54900DB367B /* Update Readme */,
 				D3DDBFCB1E903449002FEF67 /* Sources */,
 				D3DDBFCC1E903449002FEF67 /* Frameworks */,
 				D3DDBFCD1E903449002FEF67 /* Resources */,
@@ -430,12 +441,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D310A5161E91BF8300DB367B /* Build Increment */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Increment";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		D310A5171E91C54900DB367B /* Update Readme */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Readme";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python \"${PROJECT_DIR}/tools/updateReadme.py\" \"${PROJECT_DIR}/README.md\" $(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\") $(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3DDBFCB1E903449002FEF67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */,
+				D310A5151E91BDBE00DB367B /* Constants.swift in Sources */,
 				D3A896A71E91983E00CAA9D7 /* MasterTrack.swift in Sources */,
 				D3F2F9A01E918A0A00766B00 /* AutomationTrack.swift in Sources */,
 				D33792E21E9083230093249E /* NoteView.swift in Sources */,
@@ -444,6 +487,7 @@
 				D3A8969E1E918E8E00CAA9D7 /* MIDIClip.swift in Sources */,
 				D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */,
 				D3F2F98B1E9180FC00766B00 /* App.swift in Sources */,
+				D310A5131E91BA3F00DB367B /* Preferences.swift in Sources */,
 				D33792F01E9146840093249E /* StringExtensions.swift in Sources */,
 				D33792EE1E913EAD0093249E /* Config.swift in Sources */,
 				D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */,
@@ -460,6 +504,7 @@
 				D3F2F97A1E9168B200766B00 /* PianoRollGridController.swift in Sources */,
 				D3A896A51E91969D00CAA9D7 /* Vector2.swift in Sources */,
 				D3DD67E51E907CCB00BFF022 /* PianoRollGridView.swift in Sources */,
+				D3D1ED9D1E91AF4300DF7C93 /* Theme.swift in Sources */,
 				D33792E41E90835C0093249E /* NoteViewController.swift in Sources */,
 				D3F2F9911E91860B00766B00 /* Track.swift in Sources */,
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
@@ -536,6 +581,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -559,6 +605,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -586,6 +633,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -601,6 +649,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
@@ -609,13 +658,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.Salt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -624,13 +675,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.Salt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};

@@ -1,8 +1,4 @@
-# Salt 0.0.0.0
-
-## Description
-
-Node based digital audio workstation.
+Salt 0.0.1.42 
 
 ## Proposal
 
