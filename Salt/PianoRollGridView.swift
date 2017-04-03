@@ -33,8 +33,10 @@ class PianoRollGridView: NSView {
     
     // TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
     @IBAction func scaleHeight(sender: NSSlider) {
-        keyHeight = sender.doubleValue * heightMultiplier
         self.frame = NSRect(x: 0, y: 0, width: self.frame.width, height: CGFloat(sender.doubleValue * 4000))
+        keyHeight = Double(self.frame.height / CGFloat(128.0))
+        //Swift.print(keyHeight)
+        
         setNeedsDisplay(bounds)
     }
     
@@ -71,9 +73,8 @@ class PianoRollGridView: NSView {
     
     func drawgrid(_ rect: NSRect) {
         
-        //let widthRatio = getRatio(<#T##gridRes: Double##Double#>, <#T##width: CGFloat##CGFloat#>)
-        
         // Set Colours
+        // TODO: Move these to theme
         NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.2).setFill()
         NSColor(deviceRed: 0, green: 0, blue: 0, alpha: 0.15).setStroke()
         
@@ -92,24 +93,21 @@ class PianoRollGridView: NSView {
         let width: Int = Int(frame.width)
         let gridWidth: Double = Double((superview?.bounds.width)!) / App.current!.selectedClip!.timeSignature.denominator
         
-        //Swift.print(gridWidth)
-        
         for i in 0...width {
             if Double(i).truncatingRemainder(dividingBy: round(gridWidth)) == 0 {
                 NSBezierPath.strokeLine(from: NSMakePoint(CGFloat(i), 0), to: NSMakePoint(CGFloat(i), frame.height))
             }
         }
-        
     }
     
     func drawHorizontals(_ rect: NSRect) {
         
         let width: Int = Int(frame.width)
-        
+        Swift.print(width)
         var keyCounter = 0
         for i in 0...127 {
             
-            let yPos: Int = (i + 1) * Int(keyHeight)
+            let yPos: Double = (Double(i) + 1) * keyHeight
             
             if isBlackKey(key: keyCounter) {
                 
@@ -117,7 +115,7 @@ class PianoRollGridView: NSView {
                 drawKey(rect, key: i, isBlackKey: true)
                 
                 // Draw Note Track Bars
-                let noteTrackRect = NSBezierPath(rect: NSRect(x: 0, y: yPos-Int(keyHeight), width: width, height: Int(keyHeight)))
+                let noteTrackRect = NSBezierPath(rect: NSRect(x: 0, y: yPos-keyHeight, width: Double(width), height: keyHeight))
                 
                 noteTrackRect.stroke()
                 noteTrackRect.fill()

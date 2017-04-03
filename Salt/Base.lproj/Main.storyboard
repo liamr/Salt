@@ -710,7 +710,7 @@
                                             </slider>
                                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QEX-tr-O2z">
                                                 <rect key="frame" x="-2" y="-2" width="222" height="19"/>
-                                                <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="0.42642257462686567" tickMarkPosition="above" sliderType="linear" id="jjc-NP-AAk"/>
+                                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="above" sliderType="linear" id="jjc-NP-AAk"/>
                                                 <connections>
                                                     <action selector="scaleHeightWithSender:" target="Ly4-1C-Sv1" id="Vok-7C-NC9"/>
                                                 </connections>
