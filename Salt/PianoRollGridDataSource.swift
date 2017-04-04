@@ -10,4 +10,6 @@ import Foundation
 
 protocol PianoRollGridDataSource: class {
     func getNotes() -> [Note]
+    func getNotesFor(key: Int) -> [Note]
+    func getKeyTracks() -> [Int: [Note]]
 }

@@ -29,4 +29,15 @@ class PianoRollGridController: NSViewController, PianoRollGridDataSource {
         return [Note]()
     }
     
+    func getNotesFor(key: Int) -> [Note] {
+        return getKeyTracks()[key] ?? [Note]()
+    }
+    
+    func getKeyTracks() -> [Int : [Note]] {
+        if let clip = App.current?.selectedClip as? MIDIClip {
+            return clip.keyTracks
+        }
+        
+        return [Int: [Note]]()
+    }
 }

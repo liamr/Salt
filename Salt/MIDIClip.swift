@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 class MIDIClip: Clip {
-    var notes: [Note] = [Note]()
+    var keyTracks: [Int: [Note]] = [Int: [Note]]()
     
     var name: String = ""
     var length: Double = 1.0
@@ -31,5 +31,21 @@ class MIDIClip: Clip {
     
     init() {
         loopEnd = length
+        
+        // TODO: Remove test data
+        keyTracks = addTestNoteData()
+    }
+    
+    func addTestNoteData() -> [Int: [Note]] {
+        // TODO Write serialisation/ deserialisation step to pull this from JSON/ XML File
+        let output: [Int: [Note]] = [
+            0 : [Note(), Note()],
+            12 : [Note(), Note()],
+            13 : [Note(), Note()],
+            6 : [Note(), Note()],
+            4 : [Note(), Note()]
+        ]
+        
+        return output
     }
 }
