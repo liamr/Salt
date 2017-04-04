@@ -692,20 +692,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="706" height="344"/>
                                 <subviews>
                                     <stackView distribution="fillProportionally" orientation="vertical" alignment="centerX" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXY-XA-Pl5">
-                                        <rect key="frame" x="0.0" y="249" width="218" height="95"/>
+                                        <rect key="frame" x="0.0" y="289" width="218" height="55"/>
                                         <subviews>
-                                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qbe-ud-U7h">
-                                                <rect key="frame" x="-2" y="78" width="222" height="19"/>
-                                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" minValue="400" maxValue="4000" doubleValue="600" tickMarkPosition="above" sliderType="linear" id="8IM-Bi-rzi"/>
-                                                <connections>
-                                                    <action selector="setHeightWithSender:" target="Ly4-1C-Sv1" id="HcJ-rC-DN9"/>
-                                                </connections>
-                                            </slider>
                                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-aC-n49">
                                                 <rect key="frame" x="-2" y="38" width="222" height="19"/>
                                                 <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="PdX-2W-gOo"/>
                                                 <connections>
-                                                    <action selector="updateHeightWithSender:" target="Ly4-1C-Sv1" id="xU7-o5-2xJ"/>
+                                                    <action selector="scaleWidthWithSender:" target="Ly4-1C-Sv1" id="Q6H-zT-bnt"/>
                                                 </connections>
                                             </slider>
                                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QEX-tr-O2z">
@@ -719,10 +712,8 @@
                                         <visibilityPriorities>
                                             <integer value="1000"/>
                                             <integer value="1000"/>
-                                            <integer value="1000"/>
                                         </visibilityPriorities>
                                         <customSpacing>
-                                            <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
@@ -733,17 +724,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="480" height="344"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <view autoresizesSubviews="NO" wantsLayer="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ly4-1C-Sv1" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="76" width="598" height="608"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <view autoresizesSubviews="NO" wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ly4-1C-Sv1" customClass="PianoRollGridView" customModule="Salt" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="481" height="346"/>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ly4-1C-Sv1" secondAttribute="trailing" constant="-1" id="7j8-0T-n24"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ly4-1C-Sv1" secondAttribute="bottom" id="JJM-8B-Sg4"/>
+                                                <constraint firstItem="Ly4-1C-Sv1" firstAttribute="leading" secondItem="1Q5-dK-DgE" secondAttribute="leading" id="PoE-J0-LUj"/>
+                                                <constraint firstItem="Ly4-1C-Sv1" firstAttribute="top" secondItem="1Q5-dK-DgE" secondAttribute="top" constant="-2" id="abv-bM-Sv8"/>
+                                            </constraints>
                                         </clipView>
                                         <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="XBh-CP-Ocy">
                                             <rect key="frame" x="0.0" y="328" width="480" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cuW-G2-Liu">
+                                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="cuW-G2-Liu">
                                             <rect key="frame" x="464" y="0.0" width="16" height="344"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>

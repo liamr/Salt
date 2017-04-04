@@ -26,16 +26,26 @@ class PianoRollGridView: NSView {
         didSet { setNeedsDisplay(bounds) }
     }
     
+    var gridWidth: Double = 1
+    
 
+    // TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
+    @IBAction func scaleWidth(sender: NSSlider) {
+        self.frame = NSRect(x: 0, y: 0, width: CGFloat(sender.doubleValue * 4000), height: self.frame.height)
+        gridWidth = Double(self.frame.width) / App.current!.selectedClip!.timeSignature.denominator
+        
+        setNeedsDisplay(bounds)
+    }
+    
     @IBAction func updateWidth(sender: NSSlider) {
         keyWidth = sender.doubleValue * widthMultiplier
     }
     
     // TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
+    // TODO: Not working
     @IBAction func scaleHeight(sender: NSSlider) {
         self.frame = NSRect(x: 0, y: 0, width: self.frame.width, height: CGFloat(sender.doubleValue * 4000))
         keyHeight = Double(self.frame.height / CGFloat(128.0))
-        //Swift.print(keyHeight)
         
         setNeedsDisplay(bounds)
     }
@@ -91,7 +101,6 @@ class PianoRollGridView: NSView {
     
     func drawVerticalGridLines(_ rect: NSRect) {
         let width: Int = Int(frame.width)
-        let gridWidth: Double = Double((superview?.bounds.width)!) / App.current!.selectedClip!.timeSignature.denominator
         
         for i in 0...width {
             if Double(i).truncatingRemainder(dividingBy: round(gridWidth)) == 0 {
