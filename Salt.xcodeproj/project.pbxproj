@@ -215,13 +215,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3DC59BC1E996D8000ED6B06 /* Pepper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pepper;
-			sourceTree = "<group>";
-		};
 		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				D3DDBFD11E903449002FEF67 /* Salt */,
-				D3DC59BC1E996D8000ED6B06 /* Pepper */,
 				D3DDBFE51E903449002FEF67 /* SaltTests */,
 				D3DDBFF01E903449002FEF67 /* SaltUITests */,
 				D3DDBFD01E903449002FEF67 /* Products */,
