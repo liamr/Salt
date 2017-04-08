@@ -8,8 +8,10 @@
 
 import Foundation
 
-class ClipTrack: Track {
+class ClipTrack: Track, Nestable {
+    
+    var parent: Nestable? = nil
+    
     var position: Vector2 = Vector2()
-
     var clips: [ClipSlot] = [ClipSlot]()
 }

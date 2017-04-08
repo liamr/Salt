@@ -8,6 +8,7 @@
 
 import Cocoa
 
+
 @IBDesignable
 class PianoRollGridView: NSView {
     
@@ -29,7 +30,9 @@ class PianoRollGridView: NSView {
     var gridWidth: Double = 1
     
 
-    // TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
+    
+    /// # TODO
+    /// - RENAME THESE - This one resizes the view and grid together maintaining ratio
     @IBAction func scaleWidth(sender: NSSlider) {
         self.frame = NSRect(x: 0, y: 0, width: CGFloat(sender.doubleValue * 4000), height: self.frame.height)
         gridWidth = Double(self.frame.width) / App.current!.selectedClip!.timeSignature.denominator

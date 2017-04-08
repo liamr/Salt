@@ -15,6 +15,7 @@
 		D33792EC1E913D020093249E /* NSColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EB1E913D020093249E /* NSColorExtensions.swift */; };
 		D33792EE1E913EAD0093249E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792ED1E913EAD0093249E /* Config.swift */; };
 		D33792F01E9146840093249E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EF1E9146840093249E /* StringExtensions.swift */; };
+		D37ECAD81E96D12500759E37 /* Nestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ECAD71E96D12500759E37 /* Nestable.swift */; };
 		D3A8969C1E918C6900CAA9D7 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8969B1E918C6900CAA9D7 /* Song.swift */; };
 		D3A8969E1E918E8E00CAA9D7 /* MIDIClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */; };
 		D3A896A11E918E9D00CAA9D7 /* AudioClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */; };
@@ -36,6 +37,7 @@
 		D3DDBFDC1E903449002FEF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DDBFDA1E903449002FEF67 /* Main.storyboard */; };
 		D3DDBFE71E903449002FEF67 /* SaltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFE61E903449002FEF67 /* SaltTests.swift */; };
 		D3DDBFF21E903449002FEF67 /* SaltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFF11E903449002FEF67 /* SaltUITests.swift */; };
+		D3E99FB51E96E5E9001F79A9 /* PianoRollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */; };
 		D3F2F9781E91688A00766B00 /* PianoRollGridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */; };
 		D3F2F97A1E9168B200766B00 /* PianoRollGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */; };
 		D3F2F98B1E9180FC00766B00 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F98A1E9180FC00766B00 /* App.swift */; };
@@ -88,6 +90,7 @@
 		D33792EB1E913D020093249E /* NSColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorExtensions.swift; sourceTree = "<group>"; };
 		D33792ED1E913EAD0093249E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D33792EF1E9146840093249E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		D37ECAD71E96D12500759E37 /* Nestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nestable.swift; sourceTree = "<group>"; };
 		D3A8969B1E918C6900CAA9D7 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIClip.swift; sourceTree = "<group>"; };
 		D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioClip.swift; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 		D3DDBFED1E903449002FEF67 /* SaltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFF11E903449002FEF67 /* SaltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltUITests.swift; sourceTree = "<group>"; };
 		D3DDBFF31E903449002FEF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollView.swift; sourceTree = "<group>"; };
 		D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridDataSource.swift; sourceTree = "<group>"; };
 		D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridController.swift; sourceTree = "<group>"; };
 		D3F2F98A1E9180FC00766B00 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				D33792E31E90835C0093249E /* NoteViewController.swift */,
 			);
 			name = Note;
+			path = Sequencer/Note;
 			sourceTree = "<group>";
 		};
 		D33792EA1E913CF10093249E /* Extensions */ = {
@@ -170,7 +175,7 @@
 				D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */,
 				D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D3A8969F1E918E9100CAA9D7 /* Clips */ = {
@@ -180,7 +185,7 @@
 				D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */,
 				D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */,
 			);
-			name = Clips;
+			path = Clips;
 			sourceTree = "<group>";
 		};
 		D3A896AC1E91A09D00CAA9D7 /* Enums */ = {
@@ -188,7 +193,7 @@
 			children = (
 				D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */,
 			);
-			name = Enums;
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
@@ -197,8 +202,10 @@
 				D3DD67E41E907CCB00BFF022 /* PianoRollGridView.swift */,
 				D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */,
 				D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */,
+				D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */,
 			);
 			name = "Piano Roll";
+			path = "Sequencer/Piano Roll";
 			sourceTree = "<group>";
 		};
 		D3DDBFC61E903449002FEF67 = {
@@ -274,7 +281,7 @@
 				D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */,
 				D3B4B7771E92288000D01B30 /* Grid.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D3F2F98F1E9185F800766B00 /* Sequencer */ = {
@@ -292,8 +299,9 @@
 				D3F2F98D1E9185D700766B00 /* Clip.swift */,
 				D3F2F9901E91860B00766B00 /* Track.swift */,
 				D3F2F99B1E9189B700766B00 /* Node.swift */,
+				D37ECAD71E96D12500759E37 /* Nestable.swift */,
 			);
-			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		D3F2F9981E91898A00766B00 /* Tracks */ = {
@@ -306,7 +314,7 @@
 				D3F2F99F1E918A0A00766B00 /* AutomationTrack.swift */,
 				D3A896A61E91983E00CAA9D7 /* MasterTrack.swift */,
 			);
-			name = Tracks;
+			path = Tracks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +389,7 @@
 					D3DDBFCE1E903449002FEF67 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B4MRNC88BC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D3DDBFE11E903449002FEF67 = {
@@ -499,6 +508,7 @@
 				D3A8969C1E918C6900CAA9D7 /* Song.swift in Sources */,
 				D33792E61E90838D0093249E /* Note.swift in Sources */,
 				D3A896A91E919AFB00CAA9D7 /* TimeSignature.swift in Sources */,
+				D37ECAD81E96D12500759E37 /* Nestable.swift in Sources */,
 				D3F2F9971E91897800766B00 /* AudioTrack.swift in Sources */,
 				D3DDBFD31E903449002FEF67 /* AppDelegate.swift in Sources */,
 				D3A896A11E918E9D00CAA9D7 /* AudioClip.swift in Sources */,
@@ -511,6 +521,7 @@
 				D33792E41E90835C0093249E /* NoteViewController.swift in Sources */,
 				D3F2F9911E91860B00766B00 /* Track.swift in Sources */,
 				D3DDBFD71E903449002FEF67 /* Document.swift in Sources */,
+				D3E99FB51E96E5E9001F79A9 /* PianoRollView.swift in Sources */,
 				D3F2F98E1E9185D700766B00 /* Clip.swift in Sources */,
 				D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */,
 				D3B4B7781E92288000D01B30 /* Grid.swift in Sources */,
@@ -661,6 +672,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
@@ -669,6 +681,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "";
 			};
@@ -678,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
@@ -686,6 +701,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "";
 			};

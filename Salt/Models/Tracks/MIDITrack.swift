@@ -9,4 +9,9 @@
 import Foundation
 
 class MIDITrack: ClipTrack {
+    var id: UUID = UUID()
+    
+    var frozen: Bool = false
+    
 }
+
