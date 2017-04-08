@@ -26,6 +26,9 @@
 		D3A896AB1E919C9D00CAA9D7 /* ClipSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */; };
 		D3A896AE1E91A0AE00CAA9D7 /* ClipState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */; };
 		D3B4B7781E92288000D01B30 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B4B7771E92288000D01B30 /* Grid.swift */; };
+		D3B834481E9999DD00D41EA0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B834461E9999DD00D41EA0 /* AudioToolbox.framework */; };
+		D3B834491E9999DD00D41EA0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B834471E9999DD00D41EA0 /* CoreAudio.framework */; };
+		D3B8344B1E9999E400D41EA0 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B8344A1E9999E400D41EA0 /* CoreMIDI.framework */; };
 		D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */; };
 		D3C1CAE31E915D5300B9F58E /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */; };
 		D3D1ED9D1E91AF4300DF7C93 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */; };
@@ -101,6 +104,9 @@
 		D3A896AA1E919C9D00CAA9D7 /* ClipSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipSlot.swift; sourceTree = "<group>"; };
 		D3A896AD1E91A0AE00CAA9D7 /* ClipState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipState.swift; sourceTree = "<group>"; };
 		D3B4B7771E92288000D01B30 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		D3B834461E9999DD00D41EA0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D3B834471E9999DD00D41EA0 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D3B8344A1E9999E400D41EA0 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		D3C1CAE01E915A0100B9F58E /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		D3C1CAE21E915D5300B9F58E /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
 		D3D1ED9C1E91AF4300DF7C93 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B8344B1E9999E400D41EA0 /* CoreMIDI.framework in Frameworks */,
+				D3B834481E9999DD00D41EA0 /* AudioToolbox.framework in Frameworks */,
+				D3B834491E9999DD00D41EA0 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +205,23 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		D3B834451E9999DD00D41EA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3B8344A1E9999E400D41EA0 /* CoreMIDI.framework */,
+				D3B834461E9999DD00D41EA0 /* AudioToolbox.framework */,
+				D3B834471E9999DD00D41EA0 /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3DC59BC1E996D8000ED6B06 /* Pepper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pepper;
+			sourceTree = "<group>";
+		};
 		D3DD67E31E907CAD00BFF022 /* Piano Roll */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,9 +238,11 @@
 			isa = PBXGroup;
 			children = (
 				D3DDBFD11E903449002FEF67 /* Salt */,
+				D3DC59BC1E996D8000ED6B06 /* Pepper */,
 				D3DDBFE51E903449002FEF67 /* SaltTests */,
 				D3DDBFF01E903449002FEF67 /* SaltUITests */,
 				D3DDBFD01E903449002FEF67 /* Products */,
+				D3B834451E9999DD00D41EA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -681,7 +709,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "";
@@ -701,7 +728,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "";
 			};
