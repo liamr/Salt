@@ -8,9 +8,6 @@
 
 import Foundation
 
-class MasterTrack: Track {
-    
-    // Node Properties
-    var position: Vector2 = Vector2()
+class MasterTrack: MixTrack {
     
 }

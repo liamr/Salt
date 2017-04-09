@@ -42,8 +42,8 @@
 		D3DDBFDC1E903449002FEF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DDBFDA1E903449002FEF67 /* Main.storyboard */; };
 		D3DDBFE71E903449002FEF67 /* SaltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFE61E903449002FEF67 /* SaltTests.swift */; };
 		D3DDBFF21E903449002FEF67 /* SaltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DDBFF11E903449002FEF67 /* SaltUITests.swift */; };
-		D3E322F21E9ADE90003F4317 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E322F01E9ADE90003F4317 /* AudioKit.framework */; };
-		D3E322F31E9ADE90003F4317 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E322F11E9ADE90003F4317 /* SwiftyJSON.framework */; };
+		D3E322FB1E9AE190003F4317 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E322F91E9AE190003F4317 /* AudioKit.framework */; };
+		D3E322FE1E9AEDFA003F4317 /* MixTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E322FD1E9AEDFA003F4317 /* MixTrack.swift */; };
 		D3E99FB51E96E5E9001F79A9 /* PianoRollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */; };
 		D3F2F9781E91688A00766B00 /* PianoRollGridDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */; };
 		D3F2F97A1E9168B200766B00 /* PianoRollGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */; };
@@ -132,6 +132,9 @@
 		D3DDBFF31E903449002FEF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3E322F01E9ADE90003F4317 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Salt/Carthage/Build/Mac/AudioKit.framework; sourceTree = "<group>"; };
 		D3E322F11E9ADE90003F4317 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Salt/Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D3E322F91E9AE190003F4317 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/Mac/AudioKit.framework; sourceTree = "<group>"; };
+		D3E322FA1E9AE190003F4317 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D3E322FD1E9AEDFA003F4317 /* MixTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixTrack.swift; sourceTree = "<group>"; };
 		D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollView.swift; sourceTree = "<group>"; };
 		D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridDataSource.swift; sourceTree = "<group>"; };
 		D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridController.swift; sourceTree = "<group>"; };
@@ -151,12 +154,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E322FB1E9AE190003F4317 /* AudioKit.framework in Frameworks */,
 				D3DC10061E9A85EB0044968B /* AudioUnit.framework in Frameworks */,
 				D3B8344B1E9999E400D41EA0 /* CoreMIDI.framework in Frameworks */,
 				D3B834481E9999DD00D41EA0 /* AudioToolbox.framework in Frameworks */,
 				D3B834491E9999DD00D41EA0 /* CoreAudio.framework in Frameworks */,
-				D3E322F21E9ADE90003F4317 /* AudioKit.framework in Frameworks */,
-				D3E322F31E9ADE90003F4317 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +221,8 @@
 		D3B834451E9999DD00D41EA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3E322F91E9AE190003F4317 /* AudioKit.framework */,
+				D3E322FA1E9AE190003F4317 /* SwiftyJSON.framework */,
 				D3E322F01E9ADE90003F4317 /* AudioKit.framework */,
 				D3E322F11E9ADE90003F4317 /* SwiftyJSON.framework */,
 				D3DC10051E9A85EB0044968B /* AudioUnit.framework */,
@@ -356,6 +360,7 @@
 				D3F2F99D1E9189F300766B00 /* ReturnTrack.swift */,
 				D3F2F99F1E918A0A00766B00 /* AutomationTrack.swift */,
 				D3A896A61E91983E00CAA9D7 /* MasterTrack.swift */,
+				D3E322FD1E9AEDFA003F4317 /* MixTrack.swift */,
 			);
 			path = Tracks;
 			sourceTree = "<group>";
@@ -533,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3DDBFD51E903449002FEF67 /* ViewController.swift in Sources */,
+				D3E322FE1E9AEDFA003F4317 /* MixTrack.swift in Sources */,
 				D310A5151E91BDBE00DB367B /* Constants.swift in Sources */,
 				D3A896A71E91983E00CAA9D7 /* MasterTrack.swift in Sources */,
 				D3F2F9A01E918A0A00766B00 /* AutomationTrack.swift in Sources */,
@@ -723,6 +729,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Salt/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -745,6 +752,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Salt/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

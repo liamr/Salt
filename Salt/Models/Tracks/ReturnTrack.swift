@@ -8,9 +8,5 @@
 
 import Foundation
 
-class ReturnTrack: Track {
-    
-    // Node Properties
-    var position: Vector2 = Vector2()
-    
+class ReturnTrack: MixTrack {    
 }
