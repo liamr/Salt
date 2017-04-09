@@ -1,4 +1,4 @@
-# Salt 0.0.1.302 
+# Salt 0.0.1.304 
 
 ## Proposal
 
