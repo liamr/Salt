@@ -16,9 +16,13 @@ class App {
     var selectedClip: Clip? = nil
     var selectedTrack: Track? = nil
     
+    // Songs
     var song: Song? = nil
     
+    // UI
     var theme = Theme.set()
+    
+    var engine: Engine = Engine()
     
     init() {
         // TODO: New file init
