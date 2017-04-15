@@ -18,6 +18,9 @@ class PianoRollView: NSView {
     }
     
     override func draw(_ dirtyRect: NSRect) {
+        
+        
+        
         let subLayer = CALayer()
         subLayer.frame = dirtyRect
         

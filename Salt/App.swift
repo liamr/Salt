@@ -24,6 +24,8 @@ class App {
     
     var engine: Engine = Engine()
     
+    var master: MasterTrack = MasterTrack()
+    
     init() {
         // TODO: New file init
         

@@ -9,5 +9,8 @@
 import Foundation
 
 class MasterTrack: MixTrack {
-    
+    override init(){
+        super.init()
+        App.current?.engine.connect(self.mixer, to: (App.current?.engine.mainMixerNode)!, format: nil)
+    }
 }
