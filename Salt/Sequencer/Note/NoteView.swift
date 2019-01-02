@@ -22,4 +22,7 @@ class NoteView: NSView {
         // Draw text on rect
     }
     
+    private func getColorFromVelocity(_ velocity: Double) -> NSColor {
+        return (App.current?.theme.pianoRoll.noteMinVelocity.lerp((App.current?.theme.pianoRoll.noteMaxVelocity)!, velocity))!
+    }
 }

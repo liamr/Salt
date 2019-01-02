@@ -16,6 +16,7 @@
 		D33792EE1E913EAD0093249E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792ED1E913EAD0093249E /* Config.swift */; };
 		D33792F01E9146840093249E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792EF1E9146840093249E /* StringExtensions.swift */; };
 		D37ECAD81E96D12500759E37 /* Nestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37ECAD71E96D12500759E37 /* Nestable.swift */; };
+		D3A46DB721DC673200A37EB4 /* PianoRollGridViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A46DB621DC673200A37EB4 /* PianoRollGridViewDelegate.swift */; };
 		D3A8969C1E918C6900CAA9D7 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8969B1E918C6900CAA9D7 /* Song.swift */; };
 		D3A8969E1E918E8E00CAA9D7 /* MIDIClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */; };
 		D3A896A11E918E9D00CAA9D7 /* AudioClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */; };
@@ -97,6 +98,7 @@
 		D33792ED1E913EAD0093249E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D33792EF1E9146840093249E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		D37ECAD71E96D12500759E37 /* Nestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nestable.swift; sourceTree = "<group>"; };
+		D3A46DB621DC673200A37EB4 /* PianoRollGridViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoRollGridViewDelegate.swift; sourceTree = "<group>"; };
 		D3A8969B1E918C6900CAA9D7 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		D3A8969D1E918E8E00CAA9D7 /* MIDIClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIClip.swift; sourceTree = "<group>"; };
 		D3A896A01E918E9D00CAA9D7 /* AudioClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioClip.swift; sourceTree = "<group>"; };
@@ -129,10 +131,6 @@
 		D3DDBFED1E903449002FEF67 /* SaltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3DDBFF11E903449002FEF67 /* SaltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltUITests.swift; sourceTree = "<group>"; };
 		D3DDBFF31E903449002FEF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3E322F01E9ADE90003F4317 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Salt/Carthage/Build/Mac/AudioKit.framework; sourceTree = "<group>"; };
-		D3E322F11E9ADE90003F4317 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Salt/Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
-		D3E322F91E9AE190003F4317 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = Carthage/Build/Mac/AudioKit.framework; sourceTree = "<group>"; };
-		D3E322FA1E9AE190003F4317 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		D3E322FD1E9AEDFA003F4317 /* MixTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixTrack.swift; sourceTree = "<group>"; };
 		D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollView.swift; sourceTree = "<group>"; };
 		D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoRollGridDataSource.swift; sourceTree = "<group>"; };
@@ -219,10 +217,6 @@
 		D3B834451E9999DD00D41EA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D3E322F91E9AE190003F4317 /* AudioKit.framework */,
-				D3E322FA1E9AE190003F4317 /* SwiftyJSON.framework */,
-				D3E322F01E9ADE90003F4317 /* AudioKit.framework */,
-				D3E322F11E9ADE90003F4317 /* SwiftyJSON.framework */,
 				D3DC10051E9A85EB0044968B /* AudioUnit.framework */,
 				D3B8344A1E9999E400D41EA0 /* CoreMIDI.framework */,
 				D3B834461E9999DD00D41EA0 /* AudioToolbox.framework */,
@@ -246,6 +240,7 @@
 				D3F2F9771E91688A00766B00 /* PianoRollGridDataSource.swift */,
 				D3F2F9791E9168B200766B00 /* PianoRollGridController.swift */,
 				D3E99FB41E96E5E9001F79A9 /* PianoRollView.swift */,
+				D3A46DB621DC673200A37EB4 /* PianoRollGridViewDelegate.swift */,
 			);
 			name = "Piano Roll";
 			path = "Sequencer/Piano Roll";
@@ -429,7 +424,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Iko;
 				TargetAttributes = {
 					D3DDBFCE1E903449002FEF67 = {
@@ -575,6 +570,7 @@
 				D3F2F98E1E9185D700766B00 /* Clip.swift in Sources */,
 				D3C1CAE11E915A0100B9F58E /* DoubleExtensions.swift in Sources */,
 				D3B4B7781E92288000D01B30 /* Grid.swift in Sources */,
+				D3A46DB721DC673200A37EB4 /* PianoRollGridViewDelegate.swift in Sources */,
 				D3F2F9781E91688A00766B00 /* PianoRollGridDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,6 +632,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -643,6 +640,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -694,6 +692,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -701,6 +700,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -738,10 +738,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
@@ -761,10 +758,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.1;
 				DEVELOPMENT_TEAM = B4MRNC88BC;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;

@@ -12,9 +12,12 @@ import Cocoa
 @IBDesignable
 class PianoRollGridView: NSView {
     
+    weak var delegate: PianoRollGridViewDelegate?
     weak var dataSource: PianoRollGridDataSource?
     
     //private var noteCache: Dictionary<UUID, PianoRollNoteView> = [:]
+    
+    var gridWidth: Double = 1
     
     let widthMultiplier: Double = 60.0
     let heightMultiplier: Double = 60.0
@@ -27,8 +30,16 @@ class PianoRollGridView: NSView {
         didSet { setNeedsDisplay(bounds) }
     }
     
-    var gridWidth: Double = 1
+    override func mouseDown(with theEvent: NSEvent) {
+       
+        let localPoint = convert(theEvent.locationInWindow, from: nil)
+        
+        delegate?.gridView(self, willSelectNoteAt: 40, andTime: 0.5)
+    }
     
+    override func rightMouseDown(with theEvent: NSEvent) {
+        print("right mouse")
+    }
 
     
     /// # TODO
@@ -44,8 +55,8 @@ class PianoRollGridView: NSView {
         keyWidth = sender.doubleValue * widthMultiplier
     }
     
-    // TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
-    // TODO: Not working
+    /// # TODO: RENAME THESE - This one resizes the view and grid together maintaining ratio
+    /// # TODO: Not working
     @IBAction func scaleHeight(sender: NSSlider) {
         self.frame = NSRect(x: 0, y: 0, width: self.frame.width, height: CGFloat(sender.doubleValue * 4000))
         keyHeight = Double(self.frame.height / CGFloat(128.0))

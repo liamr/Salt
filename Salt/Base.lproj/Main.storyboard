@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -665,12 +664,15 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ckk-yw-fiv">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="479" y="287" width="500" height="400"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="500" height="400"/>
+                        <connections>
+                            <outlet property="delegate" destination="jGA-0Y-lOj" id="nVW-aH-ufG"/>
+                        </connections>
                     </window>
                     <connections>
                         <segue destination="3Ot-az-c0S" kind="relationship" relationship="window.shadowedContentViewController" id="qsX-4L-MyC"/>
@@ -692,9 +694,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <font key="font" metaFont="message"/>
-                        <tabViewItems/>
+                        <connections>
+                            <outlet property="delegate" destination="3Ot-az-c0S" id="a69-c0-I89"/>
+                        </connections>
                     </tabView>
                     <connections>
+                        <outlet property="tabView" destination="oLj-jq-kbc" id="3G1-xC-yvP"/>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="tabItems" id="t1l-AA-aYv"/>
                         <segue destination="K7V-4K-kCo" kind="relationship" relationship="tabItems" id="pGV-jI-VWH"/>
                     </connections>
@@ -719,7 +724,7 @@
         <!--Piano Roll-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="Piano Roll" id="5gI-5U-AMq" customClass="ViewController" customModule="Salt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Piano Roll" id="5gI-5U-AMq" customClass="PianoRollGridController" customModule="Salt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="ERx-hH-rdd">
                         <rect key="frame" x="0.0" y="0.0" width="706" height="344"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -771,11 +776,11 @@
                                                 <constraint firstItem="Ly4-1C-Sv1" firstAttribute="top" secondItem="1Q5-dK-DgE" secondAttribute="top" constant="-2" id="abv-bM-Sv8"/>
                                             </constraints>
                                         </clipView>
-                                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="XBh-CP-Ocy">
+                                        <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="XBh-CP-Ocy">
                                             <rect key="frame" x="0.0" y="328" width="480" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cuW-G2-Liu">
+                                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="cuW-G2-Liu">
                                             <rect key="frame" x="464" y="0.0" width="16" height="344"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -801,6 +806,9 @@
                             <constraint firstItem="0FF-Kc-1VT" firstAttribute="top" secondItem="ERx-hH-rdd" secondAttribute="top" id="YtF-bH-K3W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pianoRollGridView" destination="Ly4-1C-Sv1" id="anZ-9W-djS"/>
+                    </connections>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

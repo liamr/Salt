@@ -38,12 +38,13 @@ class MIDIClip: Clip {
     
     func addTestNoteData() -> [Int: [Note]] {
         // TODO Write serialisation/ deserialisation step to pull this from JSON/ XML File
-        let output: [Int: [Note]] = [
+        let output: [Int : [Note]] = [
             0 : [Note(), Note()],
+            4 : [Note(), Note()],
+            6 : [Note(), Note()],
             12 : [Note(), Note()],
             13 : [Note(), Note()],
-            6 : [Note(), Note()],
-            4 : [Note(), Note()]
+            40 : [ Note(time: 0.0, duration: 12.0) ]
         ]
         
         return output
