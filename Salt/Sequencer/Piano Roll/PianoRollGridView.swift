@@ -32,7 +32,7 @@ class PianoRollGridView: NSView {
     
     override func mouseDown(with theEvent: NSEvent) {
        
-        let localPoint = convert(theEvent.locationInWindow, from: nil)
+        let _ = convert(theEvent.locationInWindow, from: nil)
         
         delegate?.gridView(self, willSelectNoteAt: 40, andTime: 0.5)
     }

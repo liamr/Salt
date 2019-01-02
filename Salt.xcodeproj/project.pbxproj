@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5263B8AA5FBEEC6C1EA6DC09 /* Pods_Salt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF09E82CE52C8912FC42D47 /* Pods_Salt.framework */; };
 		D310A5131E91BA3F00DB367B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310A5121E91BA3F00DB367B /* Preferences.swift */; };
 		D310A5151E91BDBE00DB367B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310A5141E91BDBE00DB367B /* Constants.swift */; };
 		D33792E21E9083230093249E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33792E11E9083230093249E /* NoteView.swift */; };
@@ -89,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F1625F5F18A1E6456AB746F /* Pods-Salt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Salt/Pods-Salt.debug.xcconfig"; sourceTree = "<group>"; };
+		8C455774B59FD0BF07D67A22 /* Pods-Salt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Salt/Pods-Salt.release.xcconfig"; sourceTree = "<group>"; };
+		BEF09E82CE52C8912FC42D47 /* Pods_Salt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D310A5121E91BA3F00DB367B /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		D310A5141E91BDBE00DB367B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D33792E11E9083230093249E /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				D3B8344B1E9999E400D41EA0 /* CoreMIDI.framework in Frameworks */,
 				D3B834481E9999DD00D41EA0 /* AudioToolbox.framework in Frameworks */,
 				D3B834491E9999DD00D41EA0 /* CoreAudio.framework in Frameworks */,
+				5263B8AA5FBEEC6C1EA6DC09 /* Pods_Salt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +180,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D12AF903292F9FB4D77D2E24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F1625F5F18A1E6456AB746F /* Pods-Salt.debug.xcconfig */,
+				8C455774B59FD0BF07D67A22 /* Pods-Salt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D33792E71E90843A0093249E /* Note */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +235,7 @@
 				D3B8344A1E9999E400D41EA0 /* CoreMIDI.framework */,
 				D3B834461E9999DD00D41EA0 /* AudioToolbox.framework */,
 				D3B834471E9999DD00D41EA0 /* CoreAudio.framework */,
+				BEF09E82CE52C8912FC42D47 /* Pods_Salt.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,6 +269,7 @@
 				D3DDBFF01E903449002FEF67 /* SaltUITests */,
 				D3DDBFD01E903449002FEF67 /* Products */,
 				D3B834451E9999DD00D41EA0 /* Frameworks */,
+				D12AF903292F9FB4D77D2E24 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -365,12 +381,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3DDBFF61E903449002FEF67 /* Build configuration list for PBXNativeTarget "Salt" */;
 			buildPhases = (
+				EBE45344F7005B7F5CA893EE /* [CP] Check Pods Manifest.lock */,
 				D310A5161E91BF8300DB367B /* Build Increment */,
 				D310A5171E91C54900DB367B /* Update Readme */,
 				D3DDBFCB1E903449002FEF67 /* Sources */,
 				D3DDBFCC1E903449002FEF67 /* Frameworks */,
 				D3DDBFCD1E903449002FEF67 /* Resources */,
 				D3F2F9841E9178B500766B00 /* Embed Frameworks */,
+				1681FEF8CADDBD69C49D14D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,20 +448,20 @@
 					D3DDBFCE1E903449002FEF67 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B4MRNC88BC;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					D3DDBFE11E903449002FEF67 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B4MRNC88BC;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D3DDBFCE1E903449002FEF67;
 					};
 					D3DDBFEC1E903449002FEF67 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B4MRNC88BC;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D3DDBFCE1E903449002FEF67;
 					};
@@ -497,6 +515,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1681FEF8CADDBD69C49D14D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Salt/Pods-Salt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Salt/Pods-Salt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D310A5161E91BF8300DB367B /* Build Increment */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -524,6 +566,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "python \"${PROJECT_DIR}/tools/updateReadme.py\" \"${PROJECT_DIR}/README.md\" $(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\") $(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")";
+		};
+		EBE45344F7005B7F5CA893EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Salt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -732,39 +796,45 @@
 		};
 		D3DDBFF71E903449002FEF67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1625F5F18A1E6456AB746F /* Pods-Salt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.1;
-				DEVELOPMENT_TEAM = B4MRNC88BC;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
 		D3DDBFF81E903449002FEF67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C455774B59FD0BF07D67A22 /* Pods-Salt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0.0.1;
-				DEVELOPMENT_TEAM = B4MRNC88BC;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Salt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.Salt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
@@ -780,8 +850,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.SaltTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salt.app/Contents/MacOS/Salt";
 			};
 			name = Debug;
@@ -797,8 +866,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.SaltTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salt.app/Contents/MacOS/Salt";
 			};
 			name = Release;
@@ -813,8 +881,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.SaltUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Salt;
 			};
 			name = Debug;
@@ -829,8 +896,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iko.productivity.SaltUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Salt;
 			};
 			name = Release;
